@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Piedra, Papel o Tijera</title>
+  </head>
+  <body>
+    <h1 id="t_1">Piedra, Papel o Tijera</h1>
+    <h2 id="t_2">Elige tu jugada!</h2>
+
+    <section id="section_jugadas">
+      <div id="contenedor_jugadas">
+        <div class="jugada_piedra">
+          <label for="piedra">
+            <p>Piedra</p>
+            <img src="./img/piedra.jpg" alt="piedra" />
+          </label>
+          <input
+            type="radio"
+            id="piedra"
+            name="jugada"
+            value="piedra"
+            onclick="habilitarBoton()"
+          />
+        </div>
+        <div class="jugada_papel">
+          <label for="papel">
+            <p>Papel</p>
+            <img src="./img/papel.jpg" alt="papel" />
+          </label>
+          <input
+            type="radio"
+            id="papel"
+            name="jugada"
+            value="papel"
+            onclick="habilitarBoton()"
+          />
+        </div>
+        <div class="jugada_tijera">
+          <label for="tijera">
+            <p>Tijera</p>
+            <img src="./img/tijera.jpg" alt="tijera" />
+          </label>
+          <input
+            type="radio"
+            id="tijera"
+            name="jugada"
+            value="tijera"
+            onclick="habilitarBoton()"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="boton_escoger">
+      <div id="escoger">
+        <button id="boton-escoger" onclick="">Escoger</button>
+      </div>
+      <div id="reiniciar">
+        <button id="reiniciar_2" onclick="reiniciarJuego()">Reiniciar</button>
+      </div>
+    </section>
+
+    <div id="contenedor_mensaje">
+      <div>
+        <h2>Eleccion Jugadas</h2>
+        <p id="mensajeJugada">
+          Tu elegiste <span id="jugada_h"></span>, la maquina eligió
+          <span id="jugada_pc"></span>
+        </p>
+        <section id="alerta"></section>
+      </div>
+      <div>
+        <h2>Ronda</h2>
+        <p><span id="resumen_e"></span></p>
+      </div>
+
+      <div>
+        <h2>Resultados</h2>
+        <p id="resumenFinal"></p>
+      </div>
+    </div>
+    <div id="jugarDeNuevo">
+    <section id="jugarOtraVez">
+      <h2 id="t_3">Desea jugar otra vez?</h2>
+      <div id="repetir">
+        <div id="si_1">
+          <button id="siJugar" onclick="jugarOtraVez()">Si</button>
+        </div>
+        <div id="no_1">
+          <button id="noJugar" onclick="noJugarMas()">No</button>
+        </div>
+        <p id="despedida"></p>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <ul>
+          <li>Daniel Builes Gomez</li>
+          <li>Andrea Chavarriaga</li>
+          <li>Estefania Gonzalez</li>
+      </ul>
+  </footer>
+
+    <script src="./js/ppt.js"></script>
+  </body>
+</html>

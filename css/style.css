@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    max-width: 1000px;
+    background-color: rgb(46, 134, 193 );
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#t_1{
+    width: 100%;
+    background-color: rgb(218, 247, 166 );
+    padding: 0.5%;
+    margin: 1%;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+#t_2{
+    width: 100%;
+    background-color: rgb(20, 143, 119 );
+    color: rgb(218, 247, 166 );
+    padding: 0.5%;
+    margin: 1%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: medium;
+}
+
+
+#section_jugadas{
+    width: 100%;
+    max-width: 1000px;
+    padding: 0.5%;
+    margin: 1%;
+    overflow: hidden;
+    display: flex;
+    background-color: rgb(31, 97, 141);
+    padding: 0.5%;
+    margin: 1%;
+    
+    
+}
+#contenedor_jugadas{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#boton_escoger{
+    display: flex;   
+    justify-content: space-evenly;
+    
+    
+
+}
+button{
+    margin-top: 10px;
+    background-color: rgb(33, 47, 61 );
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    width: 100%;    
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    color: rgb(218, 247, 166 );
+}
+
+#escoger{
+    flex-direction: row;
+    
+}
+
+#contenedor_mensaje{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 5px;
+    border: solid 1px rgb(17, 17, 20);
+    text-align: center;
+    padding: 0.5%;
+    margin: 1%;
+    box-sizing: border-box;
+    background-color: rgb(52, 73, 94 );
+    color: azure;
+}
+
+#jugarOtraVez{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 5px;
+    align-items: center;
+}
+
+#despedida{
+    width: 100%;
+    background-color: rgb(218, 247, 166 );
+    padding: 0.5%;
+    margin: 1%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: larger;
+}
+
+.jugada_piedra:hover{
+    background-color: #0fe9ec;
+    box-shadow: 0px 15px 20px rgba(87, 11, 185, 0.4);
+    color: #fff;
+    transform: translateX(-10px);
+    border-radius: 20% 10%;
+}
+.jugada_papel:hover{
+    background-color: #d61b0ed8;
+    box-shadow: 0px 15px 20px rgba(247, 31, 3, 0.966);
+    color: #fff;
+    transform: translateY(-10px);
+    border-radius: 20% 10%;
+    
+}
+.jugada_tijera:hover{
+    background-color: #d6c20ed8;
+    box-shadow: 0px 15px 20px rgba(174, 235, 9, 0.966);
+    color: #fff;
+    transform: translateY(-10px);
+    border-radius: 20% 10%;
+    
+}
+
+footer {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color: rgb(33, 47, 61 );
+    box-sizing: border-box;
+    height: 60px;
+}
+
+footer ul {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    margin-bottom: 30px;
+    padding: 3px;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #032a31;
+    color: #fff;
+
+}
+
+@media screen  and (max-width: 500px){
+    #t_1{
+        width: 100%;
+        font-size: medium;
+    }
+    #t_2{
+        width: 100%;
+        font-size: medium;
+    }
+    #section_jugadas{
+        padding: 0.5%;
+        margin: 1%;
+        overflow: hidden;
+        display: flex;
+        background-color: rgb(31, 97, 141);
+        padding: 0.5%;
+        margin: 1%;
+        
+        
+    }
+    #contenedor_jugadas{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    #contenedor_mensaje{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
